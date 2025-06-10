@@ -10,5 +10,6 @@ public abstract class Personnel {
 
     void getMemberinfo(){
     }
+
     abstract double getDiscountRate();
 }

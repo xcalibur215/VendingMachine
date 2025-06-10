@@ -2,11 +2,13 @@ public class Item {
     private String name;
     private double price;
     private String type;
+    private int quantity;
 
-    public Item(String name, double price, String type) {
+    public Item(String name, double price, String type, int quantity) {
         this.name = name;
         this.price = price;
         this.type = type;
+        this.quantity = quantity;
     }
 
     public String getName() {
@@ -23,5 +25,14 @@ public class Item {
     }
     public void setType(String type) {
         this.type = type;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    public void decreaseQuantity(int quantity) {
+        this.quantity -= quantity;
     }
 }
